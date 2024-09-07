@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Rubik';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+}
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    width: 700px;
+    height: 400px;
+}
+.grid-wrapper{
+
+    display: grid;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    /* background: rgb(83, 83, 19);  */
+    gap: 20px; 
+}
+
+/* jeremy styling */
+.paragraphs{
+    margin-top: 30px;
+}
+.jeremy .paragraphs p{
+    margin: 15px;
+    color: hsl(236, 100%, 87%);
+}
+.paragraphs p:hover{
+    cursor: pointer;
+    color: white;
+}
+.jeremyimg{
+    width: 50px;
+    margin-bottom: 22px;
+}
+.reportpara{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+.jeremy{
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: 10px;
+    height: 100%;
+    grid-row: 1/3;
+}
+.report{
+    height: 16em;
+    background:hsl(246, 80%, 60%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* grid sections */
+.bag{
+    grid-column: 2/3;
+}
+.game{
+    grid-column: 3/4;
+}
+.book{
+    grid-column: 4/5;
+}
+.exerciseimg{
+    grid-row: 2/3;
+}
+.media{
+    grid-row: 2/3;
+}
+.care{
+    grid-row: 2/3;
+}
+
+
+  
+.display{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ellipsis{
+    height: 3px;
+}
+.ellipsis:hover{
+    cursor: pointer;
+}
+/* work styling */
+.bag{
+    background-color: hsl(15, 100%, 70%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+}
+    
+    
+.svg {
+    position: absolute; /* Remove from normal flow and position absolutely */
+    top: 0; /* Adjust position to be below .work */
+    right: 0; /* Adjust position to be below .work */
+    width: 50px; /* Set width to ensure correct size */
+    margin-right: 5px;
+  }
+  
+  
+  .work {
+    position: relative; /* Create a stacking context */
+    background: hsl(235, 46%, 20%);
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    height: 87%;
+    border-radius: 15px;
+  }
+
+.game{
+    background-color:  hsl(195, 74%, 62%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+}
+.play {
+    position: relative; /* Create a stacking context */
+    background: hsl(235, 46%, 20%);
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    height: 87%;
+    border-radius: 15px;
+  }
+  .book{
+    background-color:  hsl(348, 100%, 68%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+}
+.study {
+    position: relative; 
+    background: hsl(235, 46%, 20%);
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    height: 87%;
+    border-radius: 15px;
+  }
+
+  .exerciseimg{
+    background-color:  hsl(145, 58%, 55%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+}
+.exercise {
+    position: relative; 
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    background: hsl(235, 46%, 20%);
+    height: 87%;
+    border-radius: 15px;
+  }
+  .media {
+    background-color: hsl(264, 64%, 52%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.social {
+    background: hsl(235, 46%, 20%);
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    height: 87%;
+
+    border-radius: 15px;
+    position: relative;
+    z-index: 2; 
+}
+
+.care {
+    background-color: hsl(43, 84%, 65%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    height: 100%;
+    z-index: 1; 
+}
+
+.selfcare {
+    background: hsl(235, 46%, 20%);
+    padding: 12px;
+    margin-top: 25px;
+    width: 100%;
+    height: 87%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2; 
+}
+
+
+  .hrs{
+    font-size: 32px;
+    margin-top: 20px;
+    font-family: 'Rubik';
+    font-weight: 300;
+  }
+  .week{
+    margin-top: 15px;
+    font-size: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  p.title{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .work:hover{
+    background-color: hsl(235, 47%, 34%);
+    cursor: pointer;
+}
+.play:hover{
+    background-color: hsl(235, 47%, 34%);cursor: pointer;
+}
+.study:hover{
+    background-color:hsl(235, 47%, 34%);
+    cursor: pointer;
+}
+.exercise:hover{
+    background-color: hsl(235, 47%, 34%);
+    cursor: pointer;
+}
+.social:hover{
+    background-color: hsl(235, 47%, 34%);
+    cursor: pointer;
+}
+.selfcare:hover{
+        background-color: hsl(235, 47%, 34%);
+        cursor: pointer;
+    }
+
+    /* media queries */
+    @media only screen and (max-width: 375px) {
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .bag,
+        .game,
+        .book,
+        .exerciseimg,
+        .media,
+        .care {
+          grid-column: unset;
+          grid-row: unset;
+          width: 100%;
+          max-width: 100%;
+    }
+    .work,
+        .play,
+        .study,
+        .exercise,
+        .social,
+        .selfcare{
+            padding: 20px;
+        }
+    .container{
+        min-height: 90%;
+        padding-bottom: 20px;
+    }
+    .hrs-week{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .paragraphs{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+    
